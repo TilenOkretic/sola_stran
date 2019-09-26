@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+html {
+  background: url(ws_back.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+#wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h1{
+  color: brown;
+}
+
+p1{
+  width: 4px;
+  height: 4px;
+}
+
+img {
+  position: relative;
+  width: 70%;
+  height: 70%;
+  left: 10%
+}
