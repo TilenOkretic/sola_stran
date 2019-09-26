@@ -13,11 +13,6 @@ html {
   margin: 0 auto;
 }
 
-#wrapper2 {
-  width: 800px;
-  margin: 0 auto;
-}
-
 #text {
   text-align: center;
 }
@@ -50,18 +45,14 @@ a.two:hover {
 }
 
 #a1img {
-  position: relative;
-  width: 50%;
-  left: 10%;
+  width: 80%;
   height: 50%;
+  text-align: center;
 }
 
 #a2img {
-  position: relative;
   width: 40%;
-  left: -20%;
-  height: 40%;
-  margin-top: 150px;
+  margin-top: 20%;
 }
 
 h1 {
