@@ -5,11 +5,11 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
+  height: 100% auto;
 }
 
 #wrapper {
-  width: 800px auto;
+  width: 800px;
   margin: 0 auto;
 }
 
