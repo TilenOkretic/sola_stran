@@ -3,10 +3,12 @@
 html {
   background-color: brown;
   background: url(ws_back.jpg) no-repeat;
-   background-size: cover;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: 100% top;
+  background-attachment: fixed;
 }
 
 #wrapper {
@@ -35,7 +37,7 @@ a.one {
 
 a.two {
   color: black;
-  font-family: "Lucida Console",Monaco, monospace;
+  font-family: "Lucida Console", Monaco, monospace;
   font-size: 20px;
   font-weight: 500;
   text-decoration: none;
