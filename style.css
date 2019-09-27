@@ -3,10 +3,11 @@
 html {
   background-color: brown;
   background: url(ws_back.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  height: auto;
+}
 }
 
 #wrapper {
