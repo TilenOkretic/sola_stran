@@ -9,7 +9,7 @@ html {
 }
 
 #wrapper {
-  width: 800px;
+  width: 800px auto;
   margin: 0 auto;
 }
 
