@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 html {
-  background-color: brown;
   background: url(ws_back.jpg) no-repeat;
   background-size: cover;
   -webkit-background-size: cover;

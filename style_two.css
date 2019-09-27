@@ -1,12 +1,11 @@
 @charset "UTF-8";
 
 html {
-  background: url(ws_back.jpg);
+  background: url(ws_back.jpg) no-repeat;
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #wrapper {
