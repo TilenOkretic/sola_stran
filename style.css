@@ -2,12 +2,12 @@
 
 html {
   background-color: brown;
-  background: url(ws_back.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url(ws_back.jpg) no-repeat;
+  background-repeat: repeat-y;
+   background-size: contain;
+   -webkit-background-size: contain;
+   -moz-background-size: contain;
+   -o-background-size: contain;
 }
 
 #wrapper {
