@@ -48,7 +48,7 @@ function setup() {
   addSong("Dejected Disposition");
 
   songs[0].show();
-  selectAll('p')[0].style('color','rgb(205,205,205)');
+  selectAll('p')[1].style('color','rgb(205,205,205)');
   selectAll('p')[1].style('background-color','rgb(51,51,51,0.6)');
 }
 
