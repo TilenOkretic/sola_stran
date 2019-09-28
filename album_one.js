@@ -55,7 +55,8 @@ function setup() {
 function createSongList() {
   createElement('h1', 'Songs:').parent("wrapper");
   for (var i = 0; i < songz.length; i++) {
-    createP((i + 1) + ". " + songz[i]).id(i).mouseClicked(playSong).style('width', '300px').style('cursor', 'pointer').parent("wrapper");
+    let str =(i + 1) + ". " + songz[i];
+    createP(str).id(i).mouseClicked(playSong).style('max-width',str.length + "ch").style('cursor', 'pointer').parent("wrapper");
   }
 }
 

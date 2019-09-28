@@ -18,15 +18,12 @@ h1{
 }
 
 p{
-  height: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-size: 30px 30px;
   max-width: 80ch;
   font-weight: 8px;
   font-size: 20px;
-}
-
-p1{
-  width: 4px;
-  height: 4px;
 }
 
 img {
