@@ -18,6 +18,8 @@ h1{
 }
 
 p{
+  height: 20px;
+  width: 800px;
   font-family: "Courier New", Courier, monospace;
   font-size: 20px;
 }
