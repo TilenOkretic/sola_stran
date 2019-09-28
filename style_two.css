@@ -19,9 +19,10 @@ h1{
 
 p{
   height: 20px;
-  width: 800px;
+  font-weight: 8px;
   font-family: "Courier New", Courier, monospace;
   font-size: 20px;
+  width: 800px;
 }
 
 p1{
