@@ -1,6 +1,7 @@
 let songs = [];
 let songz = [];
 let lastInd = 0;
+let info_txt;
 
 function loadSong(name) {
   songz[songz.length] = name;
@@ -9,7 +10,6 @@ function loadSong(name) {
 function addSong(name) {
   songs.push(createElement('audio').attribute('controls', '').attribute('src', 'audio/' + name + '.mp3').attribute('alt', 'audio/mpeg').parent('wrapper').hide());
 }
-let info_txt;
 
 function preload() {
   info_txt = loadStrings("info.txt");
