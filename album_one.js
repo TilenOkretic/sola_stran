@@ -3,19 +3,7 @@ let songz = [];
 let lastInd = 0;
 let info_txt;
 
-function loadSong(name) {
-  songz[songz.length] = name;
-}
-
-function addSong(name) {
-  songs.push(createElement('audio').attribute('controls', '').attribute('src', 'audio/' + name + '.mp3').attribute('alt', 'audio/mpeg').parent('wrapper').hide());
-}
-
-function preload() {
-  info_txt = loadStrings("info.txt");
-}
-
-function setup() {
+function test() {
   createCanvas(width, height);
   createDiv('').id("WRAPPER");
   createElement('h1', "Info").parent("wrapper");
@@ -48,27 +36,47 @@ function setup() {
   addSong("Dejected Disposition");
 
   songs[0].show();
-  selectAll('p')[1].style('color','rgb(205,205,205)');
-  selectAll('p')[1].style('background-color','rgb(51,51,51,0.6)');
+  selectAll('p')[1].style('color', 'rgb(205,205,205)');
+  selectAll('p')[1].style('background-color', 'rgb(51,51,51,0.6)');
+}
+
+test();
+
+function loadSong(name) {
+  songz[songz.length] = name;
+}
+
+function addSong(name) {
+  songs.push(createElement('audio').attribute('preload', 'auto').attribute('controls', '').attribute('src', 'audio/' + name + '.mp3').attribute('type', 'audio/mpeg').parent('wrapper').hide());
+}
+
+function preload() {
+  info_txt = loadStrings("info.txt");
+}
+
+
+
+function setup() {
+
 }
 
 function createSongList() {
   createElement('h1', 'Songs:').parent("wrapper");
   for (var i = 0; i < songz.length; i++) {
-    let str =(i + 1) + ". " + songz[i];
-    createP(str).id(i).mouseClicked(playSong).style('max-width',str.length + "ch").style('cursor', 'pointer').parent("wrapper");
+    let str = (i + 1) + ". " + songz[i];
+    createP(str).id(i).mouseClicked(playSong).style('max-width', str.length + "ch").style('cursor', 'pointer').parent("wrapper");
   }
 }
 
 function playSong(arg) {
   songs[lastInd].elt.currentTime = 0;
   songs[lastInd].elt.pause();
-  selectAll('p')[int(lastInd) + 1].style('color','black');
-  selectAll('p')[int(lastInd) + 1].style('background-color','rgb(0,0,0,0)');
+  selectAll('p')[int(lastInd) + 1].style('color', 'black');
+  selectAll('p')[int(lastInd) + 1].style('background-color', 'rgb(0,0,0,0)');
   songs[lastInd].hide();
   songs[arg.srcElement.id].show();
   songs[arg.srcElement.id].elt.play();
-  selectAll('p')[int(arg.srcElement.id) + 1].style('color','rgb(205,205,205)');
-  selectAll('p')[int(arg.srcElement.id) + 1].style('background-color','rgb(51,51,51,0.6)');
+  selectAll('p')[int(arg.srcElement.id) + 1].style('color', 'rgb(205,205,205)');
+  selectAll('p')[int(arg.srcElement.id) + 1].style('background-color', 'rgb(51,51,51,0.6)');
   lastInd = arg.srcElement.id;
 }
