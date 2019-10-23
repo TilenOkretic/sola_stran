@@ -4,13 +4,6 @@ let lastInd = 0;
 let info_txt;
 
 function test() {
-  createCanvas(width, height);
-  createDiv('').id("WRAPPER");
-  createElement('h1', "Info").parent("wrapper");
-  createP(info_txt).parent("wrapper");
-  createImg("ntos.jpg").style('text-align', 'left').style('left', '0%').style('width', '250px').style('height', '250px').parent('wrapper');
-
-
   loadSong("New Times, Old Soul");
   loadSong("Save Me");
   loadSong("Patient Zero");
@@ -40,14 +33,12 @@ function test() {
   selectAll('p')[1].style('background-color', 'rgb(51,51,51,0.6)');
 }
 
-test();
-
 function loadSong(name) {
   songz[songz.length] = name;
 }
 
 function addSong(name) {
-  songs.push(createElement('audio').attribute('preload', 'auto').attribute('controls', '').attribute('src', 'audio/' + name + '.mp3').attribute('type', 'audio/mpeg').parent('wrapper').hide());
+  songs.push(createElement('audio').attribute('preload', 'auto').attribute('controls', '').attribute('src', name + '.mp3').attribute('alt', 'audio/mpeg').parent('wrapper').hide());
 }
 
 function preload() {
@@ -57,6 +48,13 @@ function preload() {
 
 
 function setup() {
+  createCanvas(width, height);
+  createDiv('').id("WRAPPER");
+  createElement('h1', "Info").parent("wrapper");
+  createP(info_txt).parent("wrapper");
+  createImg("ntos.jpg").style('text-align', 'left').style('left', '0%').style('width', '250px').style('height', '250px').parent('wrapper');
+
+  test();
 
 }
 
