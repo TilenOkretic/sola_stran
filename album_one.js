@@ -38,7 +38,7 @@ function loadSong(name) {
 }
 
 function addSong(name) {
-  songs.push(createElement('audio').attribute('preload', 'auto').attribute('controls', '').attribute('src', name + '.mp3').attribute('alt', 'audio/mpeg').parent('wrapper').hide());
+  songs.push(createElement('audio').attribute('preload', 'auto').attribute('controls', '').attribute('src','music/' + name + '.mp3').attribute('alt', 'audio/mpeg').parent('wrapper').hide());
 }
 
 function preload() {
